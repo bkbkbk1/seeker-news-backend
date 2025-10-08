@@ -18,7 +18,8 @@ SEEKER_KEYWORDS = [
 ]
 
 # How many recent tweets to fetch per account
-TWEETS_PER_ACCOUNT = 10
+TWEETS_PER_ACCOUNT = 20
+
 
 
 
