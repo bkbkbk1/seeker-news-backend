@@ -2,8 +2,8 @@ name: Fetch and Analyze Seeker News
 
 on:
   schedule:
-    # Run every hour
-    - cron: '0 * * * *'
+    # Run daily at 8 AM KST (11 PM UTC previous day)
+    - cron: '0 23 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
