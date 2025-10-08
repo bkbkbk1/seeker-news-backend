@@ -12,12 +12,13 @@ MONITORED_ACCOUNTS = [
 
 # Keywords to identify Seeker-related tweets
 SEEKER_KEYWORDS = [
-    "seeker",
-    "seeker season",
-    "seeker project"
+    "Seeker",
+    "Seeker Season",
+    "Seeker Project"
 ]
 
 # How many recent tweets to fetch per account
 TWEETS_PER_ACCOUNT = 10
+
 
 
