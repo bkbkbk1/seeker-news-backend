@@ -30,7 +30,7 @@ def analyze_tweets(tweets):
 만약 Seeker/Solana Mobile과 직접 관련이 없다면 "관련없음"이라고만 답변하세요."""
 
             response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini-2024-07-18",
                 messages=[
                     {"role": "system", "content": "당신은 Solana 생태계 전문가입니다."},
                     {"role": "user", "content": prompt}
@@ -96,3 +96,4 @@ if __name__ == "__main__":
         }, f, indent=2, ensure_ascii=False)
 
     print("Saved to data/projects.json")
+
