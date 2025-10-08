@@ -36,7 +36,7 @@ def analyze_tweets(tweets):
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.7,
-                max_tokens=300
+                max_tokens=500
             )
 
             summary = response.choices[0].message.content.strip()
@@ -96,4 +96,5 @@ if __name__ == "__main__":
         }, f, indent=2, ensure_ascii=False)
 
     print("Saved to data/projects.json")
+
 
