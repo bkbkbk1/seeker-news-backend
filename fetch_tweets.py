@@ -83,13 +83,13 @@ def fetch_all_tweets():
           print(f"No Seeker tweets found. Using {len(solanamobile_tweets[:10])} recent @solanamobile tweets instead")
           return solanamobile_tweets[:10]
 
-  if __name__ == "__main__":
-      tweets = fetch_all_tweets()
-      print(f"\nFound {len(tweets)} tweets")
+if __name__ == "__main__":
+    tweets = fetch_all_tweets()
+    print(f"\nFound {len(tweets)} tweets")
 
-      # Save to JSON
-      os.makedirs("data", exist_ok=True)
-      with open("data/raw_tweets.json", "w", encoding="utf-8") as f:
-          json.dump(tweets, f, indent=2, ensure_ascii=False)
+    # Save to JSON
+    os.makedirs("data", exist_ok=True)
+    with open("data/raw_tweets.json", "w", encoding="utf-8") as f:
+        json.dump(tweets, f, indent=2, ensure_ascii=False)
 
-      print("Saved to data/raw_tweets.json")
+    print("Saved to data/raw_tweets.json")
